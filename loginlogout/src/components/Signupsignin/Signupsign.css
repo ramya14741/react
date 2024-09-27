@@ -1,0 +1,131 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    margin-left: 50vw;
+    margin-right:10vw;
+    margin-bottom: 10vw;
+    margin-top: 10vh; /* Use viewport units for better responsiveness */
+    max-width: 90%; /* Limit the container width based on viewport size */
+    background: #fff;
+    border-radius: 10px; /* Use a more reasonable border-radius */
+}
+
+.header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 9px;
+    width: 100%;
+    margin-top: 30px;
+}
+
+.text {
+    color: blue;
+    font-size: 5vw; /* Responsive font size based on viewport */
+    font-weight: 500;
+    text-align: center; /* Center the text for smaller screens */
+}
+
+.underline {
+    width: 61px;
+    height: 6px;
+    background-color: blue;
+    border-radius: 9px;
+}
+
+.inputs {
+    margin-top: 5vh;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.input {
+    display: flex;
+    align-items: center;
+    margin: auto;
+    max-width: 90%; /* Use max-width for flexibility */
+    width: 100%;
+    height: 60px; /* Adjust height for smaller screens */
+    background-color: azure;
+    border-radius: 6px;
+}
+
+.input img {
+    margin: 0px 20px;
+    width: 30px; /* Adjust image size for responsiveness */
+}
+
+input[type="text"] {
+    flex: 1;
+    height: 40px;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    color: white;
+    font-size: 16px;
+}
+
+.forgot-password {
+    text-align: center;
+    margin-top: 20px;
+    color: rebeccapurple;
+    font-size: 18px;
+}
+
+.forgot-password span{
+    color:chocolate;
+    cursor:pointer;
+}
+
+.submit-container{
+    display: flex;
+    gap:30px;
+    margin:60px auto;
+}
+.submit{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+    height: 30px;
+    color:whitesmoke;
+    background-color: violet;
+    border-radius: 50px;
+    font-size: 14px;
+    cursor: pointer;
+}
+.submit-gray{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+    height: 30px;
+    color:whitesmoke;
+    background-color: gray;
+    border-radius: 50px;
+    font-size: 14px;
+    cursor: pointer;
+    
+}
+
+/* Media query for smaller screens */
+@media (max-width: 768px) {
+    .container {
+        margin-top: 10vh;
+        padding: 15px;
+    }
+
+    .input {
+        height: 50px;
+    }
+
+    .text {
+        font-size: 4vw;
+    }
+
+    .forgot-password {
+        padding-left: 0;
+        font-size: 16px;
+    }
+}
