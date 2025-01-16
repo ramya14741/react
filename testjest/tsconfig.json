@@ -1,0 +1,69 @@
+{
+    "compilerOptions": {
+      "jsx": "react-jsx",
+      "lib":["dom","esnext"],
+      "baseUrl": "./src",                // Simplify imports starting from src
+      "paths": {
+        "components/*": ["components/*"] // Adjust path aliases
+      },
+      "allowJs": false,                  // Only TypeScript files
+      "allowSyntheticDefaultImports": true,
+      "allowUnreachableCode": false,
+      "allowUnusedLabels": false,
+      "alwaysStrict": true,
+      "charset": "utf8",
+      "checkJs": false,
+      "declaration": true,
+      "disableSizeLimit": false,
+      "downlevelIteration": false,
+      "emitBOM": false,
+      "emitDecoratorMetadata": true,
+      "esModuleInterop": true,           // For compatibility with ES modules
+      "experimentalDecorators": true,
+      "forceConsistentCasingInFileNames": true,
+      "importHelpers": false,
+      "inlineSourceMap": false,
+      "inlineSources": false,
+      "isolatedModules": false,
+      "lib": ["dom", "dom.iterable", "esnext"], // Include necessary libraries
+      "locale": "en-us",
+      "module": "esnext",                // Use ESNext module system for better compatibility
+      "moduleResolution": "node",        // Resolves modules using Node.js strategy
+      "newLine": "lf",
+      "noEmit": false,
+      "noEmitHelpers": false,
+      "noEmitOnError": true,
+      "noErrorTruncation": true,
+      "noFallthroughCasesInSwitch": true,
+      "noImplicitAny": true,             // Strict type-checking
+      "noImplicitReturns": true,
+      "noImplicitThis": true,
+      "noStrictGenericChecks": false,
+      "noUnusedLocals": true,
+      "noUnusedParameters": true,
+      "noImplicitUseStrict": false,
+      "noLib": false,
+      "noResolve": false,
+      "preserveConstEnums": true,
+      "removeComments": false,
+      "skipLibCheck": true,              // Skip type-checking of declaration files
+      "sourceMap": true,                 // Generate source maps
+      "strict": true,                    // Enable all strict type-checking options
+      "strictNullChecks": true,          // Ensure strict null checks
+      "suppressExcessPropertyErrors": false,
+      "suppressImplicitAnyIndexErrors": false,
+      "target": "esnext",                // Use modern JavaScript
+      "traceResolution": false,
+      "rootDir": "./src",                // Set root directory to src
+      "outDir": "./build",               // Output directory
+      "typeRoots": ["node_modules/@types"]  // Ensure TypeScript finds type definitions
+    },
+    "include": [
+      "src/**/*"                         // Include all files inside the src directory
+    ],
+    "exclude": [
+      "node_modules",                    // Exclude node_modules
+      "build"                            // Exclude build folder
+    ]
+  }
+  
